@@ -9,20 +9,22 @@
 }
 
 :root {
-    --primary-color: #2c5f8d;
-    --secondary-color: #f39c12;
-    --accent-color: #27ae60;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
+    /* Novas Cores em Tons Claros */
+    --primary-color: #a7d9f7; /* Azul Céu Claro */
+    --secondary-color: #ffd7a7; /* Pêssego Suave (quase salmão claro) */
+    --accent-color: #8be0a5; /* Verde Menta Claro */
+    --dark-color: #4a6a82; /* Azul acinzentado suave para texto/títulos escuros */
+    --light-color: #f0f8ff; /* Azul Alice (quase branco) */
     --white: #ffffff;
-    --text-color: #333333;
-    --gray: #7f8c8d;
-    --error-color: #e74c3c;
-    --success-color: #27ae60;
+    --text-color: #555555; /* Cinza médio para leitura */
+    --gray: #bbbbbb; /* Cinza claro para bordas/textos secundários */
+    --error-color: #ff9187; /* Vermelho suave para erros */
+    --success-color: #92e0a2; /* Verde suave para sucesso */
+
     --border-radius: 8px;
     --transition: all 0.3s ease;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra muito mais leve */
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.08); /* Sombra mais leve ao hover */
 }
 
 html {
@@ -34,7 +36,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white);
+    background-color: var(--light-color); /* Fundo geral muito claro */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -116,8 +118,8 @@ ul, ol {
    ======================================== */
 
 header {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--white); /* Header branco */
+    color: var(--dark-color); /* Texto do header mais escuro para contraste */
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
@@ -135,7 +137,7 @@ header {
 }
 
 .logo h1 {
-    color: var(--white);
+    color: var(--dark-color); /* Logo em cor mais escura */
     font-size: 1.5rem;
     margin: 0;
 }
@@ -148,7 +150,7 @@ header {
 }
 
 .nav-menu a {
-    color: var(--white);
+    color: var(--dark-color); /* Links da nav em cor mais escura */
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
@@ -157,7 +159,8 @@ header {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.05); /* Um fundo sutil em hover */
+    color: var(--primary-color); /* Cor de hover clara */
 }
 
 .menu-toggle {
@@ -172,7 +175,7 @@ header {
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--dark-color); /* Ícone do menu-toggle em cor escura */
     margin: 3px 0;
     transition: var(--transition);
 }
@@ -182,7 +185,7 @@ header {
    ======================================== */
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); /* Gradiente com cores claras */
     color: var(--white);
     text-align: center;
     padding: 5rem 0;
@@ -217,11 +220,11 @@ header {
 
 .btn-primary {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--dark-color); /* Texto do botão primário mais escuro para contraste */
 }
 
 .btn-primary:hover {
-    background-color: #e67e22;
+    background-color: #ffc27d; /* Um pouco mais escuro ao hover */
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
@@ -229,7 +232,7 @@ header {
 .btn-secondary {
     background-color: transparent;
     border-color: var(--gray);
-    color: var(--gray);
+    color: var(--dark-color); /* Texto do botão secundário escuro */
 }
 
 .btn-secondary:hover {
@@ -293,7 +296,7 @@ section {
 }
 
 .team-member .role {
-    color: var(--secondary-color);
+    color: var(--primary-color); /* Cor do papel do membro da equipe */
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -315,7 +318,7 @@ section {
     top: 0;
     bottom: 0;
     width: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color); /* Linha do tempo em cor primária */
 }
 
 .timeline-item {
@@ -331,12 +334,12 @@ section {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: var(--secondary-color);
-    border: 3px solid var(--white);
+    background-color: var(--primary-color); /* Ícone da linha do tempo em cor primária */
+    border: 3px solid var(--light-color); /* Borda em cor de fundo clara */
 }
 
 .timeline-item h4 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 1.25rem;
 }
 
@@ -352,9 +355,10 @@ section {
 }
 
 .contact-info article {
-    background-color: var(--light-color);
+    background-color: var(--white); /* Card de contato branco */
     padding: 1.5rem;
     border-radius: var(--border-radius);
+    box-shadow: var(--shadow); /* Adicionado sombra para destacar */
 }
 
 /* ========================================
@@ -395,7 +399,7 @@ section {
     top: 1rem;
     right: 1rem;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--dark-color); /* Texto do badge escuro para contraste */
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
     font-weight: 600;
@@ -406,7 +410,7 @@ section {
 }
 
 .project-category {
-    color: var(--secondary-color);
+    color: var(--primary-color); /* Categoria em cor primária */
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -422,7 +426,7 @@ section {
 }
 
 .project-details h4 {
-    color: var(--primary-color);
+    color: var(--dark-color); /* Títulos de detalhes em cor escura */
     margin-top: 1.5rem;
 }
 
@@ -433,7 +437,7 @@ section {
 
 .project-details li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--gray); /* Borda cinza clara */
 }
 
 /* ========================================
@@ -458,11 +462,13 @@ section {
     object-fit: cover;
     border-radius: var(--border-radius);
     transition: var(--transition);
+    box-shadow: var(--shadow); /* Adicionado sombra para imagens */
 }
 
 .gallery-grid img:hover,
 .gallery-grid video:hover {
     transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
 }
 
 /* ========================================
@@ -477,10 +483,11 @@ section {
 }
 
 .opportunity-card {
-    background-color: var(--light-color);
+    background-color: var(--white); /* Card de oportunidade branco */
     padding: 1.5rem;
     border-radius: var(--border-radius);
     border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow); /* Adicionado sombra */
 }
 
 .opportunity-card h4 {
@@ -488,7 +495,7 @@ section {
 }
 
 .time-commitment {
-    color: var(--gray);
+    color: var(--text-color); /* Texto de tempo escuro */
     font-style: italic;
     font-size: 0.9rem;
 }
@@ -530,6 +537,7 @@ section {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
+    color: var(--text-color); /* Texto da lista escuro */
 }
 
 .donation-card li::before {
@@ -554,7 +562,7 @@ section {
 }
 
 fieldset {
-    border: 2px solid var(--light-color);
+    border: 2px solid var(--gray); /* Borda de fieldset em cinza claro */
     border-radius: var(--border-radius);
     padding: 2rem;
     margin-bottom: 2rem;
@@ -563,7 +571,7 @@ fieldset {
 legend {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--dark-color); /* Título do fieldset escuro */
     padding: 0 1rem;
 }
 
@@ -596,12 +604,13 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 2px solid var(--light-color);
+    border: 2px solid var(--gray); /* Borda de input em cinza claro */
     border-radius: var(--border-radius);
     font-size: 1rem;
     font-family: inherit;
     transition: var(--transition);
-    background-color: var(--white);
+    background-color: var(--white); /* Fundo do input branco */
+    color: var(--text-color); /* Texto do input escuro */
 }
 
 input:focus,
@@ -609,7 +618,7 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(44, 95, 141, 0.1);
+    box-shadow: 0 0 0 3px rgba(167, 217, 247, 0.3); /* Sombra de foco em azul claro */
 }
 
 input:invalid:not(:placeholder-shown),
@@ -631,7 +640,7 @@ textarea {
 
 small {
     display: block;
-    color: var(--gray);
+    color: var(--text-color); /* Texto pequeno escuro */
     font-size: 0.85rem;
     margin-top: 0.25rem;
 }
@@ -654,6 +663,7 @@ small {
     align-items: flex-start;
     cursor: pointer;
     font-weight: normal;
+    color: var(--text-color); /* Texto do checkbox escuro */
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -683,7 +693,7 @@ small {
 /* Success Message */
 .success-message {
     background-color: var(--success-color);
-    color: var(--white);
+    color: var(--dark-color); /* Texto da mensagem de sucesso escuro */
     padding: 2rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -692,7 +702,7 @@ small {
 }
 
 .success-message h3 {
-    color: var(--white);
+    color: var(--dark-color); /* Título da mensagem de sucesso escuro */
     margin-bottom: 1rem;
 }
 
@@ -721,27 +731,29 @@ details {
     margin-bottom: 1rem;
     border-radius: var(--border-radius);
     cursor: pointer;
+    box-shadow: var(--shadow); /* Adicionado sombra */
 }
 
 summary {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--dark-color); /* Sumário em cor escura */
     cursor: pointer;
     padding: 0.5rem;
 }
 
 summary:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color); /* Hover em cor primária clara */
 }
 
 details[open] summary {
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--gray); /* Borda em cinza claro */
 }
 
 details p {
     padding: 0.5rem;
     margin: 0;
+    color: var(--text-color); /* Texto dos detalhes escuro */
 }
 
 /* ========================================
@@ -749,8 +761,8 @@ details p {
    ======================================== */
 
 footer {
-    background-color: var(--dark-color);
-    color: var(--white);
+    background-color: var(--dark-color); /* Footer em cor escura para contraste */
+    color: var(--light-color); /* Texto do footer em cor muito clara */
     padding: 3rem 0 1rem;
     margin-top: auto;
 }
@@ -763,7 +775,7 @@ footer {
 }
 
 .footer-section h3 {
-    color: var(--white);
+    color: var(--white); /* Títulos do footer em branco */
     margin-bottom: 1rem;
 }
 
@@ -791,14 +803,14 @@ footer {
 
 .social-links a {
     padding: 0.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil para links sociais */
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 .social-links a:hover {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--dark-color); /* Texto do social link escuro ao hover */
 }
 
 .footer-bottom {
@@ -821,7 +833,7 @@ footer {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: var(--primary-color);
+        background-color: var(--white); /* Menu responsivo branco */
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -835,7 +847,7 @@ footer {
 
     .nav-menu li {
         padding: 1rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--gray); /* Borda cinza clara */
     }
 
     .menu-toggle {
@@ -967,23 +979,24 @@ footer {
 
 /* Navegação por teclado mais visível */
 *:focus-visible {
-    outline: 3px solid var(--secondary-color);
+    outline: 3px solid var(--primary-color); /* Destaque de foco em azul claro */
     outline-offset: 2px;
 }
 
 /* Links com melhor contraste */
 a:focus,
 button:focus {
-    outline: 3px solid var(--secondary-color);
+    outline: 3px solid var(--primary-color); /* Destaque de foco em azul claro */
     outline-offset: 2px;
 }
 
 /* Melhor contraste para textos */
 @media (prefers-contrast: high) {
     :root {
-        --primary-color: #1a3a52;
+        --primary-color: #007bff; /* Azul padrão mais forte */
         --text-color: #000000;
         --gray: #555555;
+        --dark-color: #000000;
     }
 }
 
@@ -1001,7 +1014,7 @@ button:focus {
     position: absolute;
     top: -40px;
     left: 0;
-    background: var(--secondary-color);
+    background: var(--primary-color); /* Cor de fundo em azul claro */
     color: var(--white);
     padding: 8px;
     text-decoration: none;
@@ -1083,7 +1096,7 @@ button:focus {
     height: 30px;
     margin: -15px 0 0 -15px;
     border: 3px solid var(--light-color);
-    border-top-color: var(--primary-color);
+    border-top-color: var(--primary-color); /* Animação de loading em azul claro */
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
