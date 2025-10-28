@@ -87,18 +87,16 @@ Este projeto foi desenvolvido seguindo todos os requisitos das diretrizes fornec
 - Títulos descritivos
 - Descrições nas páginas
 
-## 📁 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```
-Projeto-Ong/
-│
-├── index.html              # Página inicial
-├── projetos.html           # Página de projetos sociais
-├── cadastro.html           # Página de cadastro
-├── styles.css              # Arquivo CSS principal
-├── script.js               # Arquivo JavaScript principal
-├── README.md               # Documentação do projeto
-
+Projeto-M-os-solid-rias-/
+├── README.md     #Documentação do preojeto
+├── index.html    #Página inicial
+├── projetos.html #Pagina de projetos sociais
+├── cadastro.html #Página de cadastro
+├── styles.css    #Arquivo CSS principal
+├── script.js     #Arquivo JavaScript principal
 
 ##  Como Executar
 
