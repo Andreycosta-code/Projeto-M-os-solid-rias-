@@ -200,3 +200,8 @@ Branch: `main`
 # Entrega II - CSS3 Avançado
 Branch: `entrega-2`
 - Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/entrega-2
+---
+O CSS foi validado pelo W3C Validator. Os alertas sobre variáveis CSS 
+são esperados, pois o validador não consegue verificar variáveis 
+dinamicamente. A propriedade `prefers-contrast: high` é uma feature 
+moderna de acessibilidade suportada pelos navegadores atuais.
