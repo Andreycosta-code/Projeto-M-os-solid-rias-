@@ -189,3 +189,14 @@ O sistema foi desenvolvido considerando 4 tipos de usuários:
 
 Este projeto foi desenvolvido para fins educacionais.
 ---
+
+#  Entregas
+
+# Entrega I - HTML5, CSS3 e JavaScript
+Branch: `main`
+- Link do site: https://andreycosta-code.github.io/Projeto-M-os-solid-rias-/
+- Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/main
+
+# Entrega II - CSS3 Avançado
+Branch: `entrega-2`
+- Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/entrega-2
