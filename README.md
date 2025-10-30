@@ -196,12 +196,21 @@ Este projeto foi desenvolvido para fins educacionais.
 Branch: `main`
 - Link do site: https://andreycosta-code.github.io/Projeto-M-os-solid-rias-/
 - Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/main
-
+--- 
 # Entrega II - CSS3 Avançado
 Branch: `entrega-2`
 - Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/entrega-2
----
-O CSS foi validado pelo W3C Validator. Os alertas sobre variáveis CSS 
+- O CSS foi validado pelo W3C Validator. Os alertas sobre variáveis CSS 
 são esperados, pois o validador não consegue verificar variáveis 
 dinamicamente. A propriedade `prefers-contrast: high` é uma feature 
 moderna de acessibilidade suportada pelos navegadores atuais.
+---
+# Entrega III - JavaScript Avançado
+Branch `entrega-3` 
+- Manipulação do DOM com templates
+- Sistema SPA básico
+- Validação de consistência de dados
+- Avisos ao usuário sobre preenchimento incorreto
+- Código organizado por funcionalidade
+- Armazenamento local (localStorage)
+- Link do código: https://github.com/Andreycosta-code/Projeto-M-os-solid-rias-/tree/entrega-3
