@@ -19,7 +19,7 @@ const Templates = {
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-sm btn-outline" onclick="Templates.viewVolunteer(${volunteer.id})">Ver Detalhes</button>
-                    <button class="btn btn-sm btn-secondary" onclick="Templates.deleteVolunteer(${volunteer.id})">Remover</button>
+                    <button class="btn btn-sm btn-secondary" onClick="Storage.deleteVolunteer(${volunteer.id}); Navigation.loadAdmin()">Excluir</button>
                 </div>
             </div>
         `;
