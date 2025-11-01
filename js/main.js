@@ -361,14 +361,14 @@ const App = {
         console.log('%c🔧 Modo Debug Ativado', 'background: #f39c12; color: white; padding: 4px 8px; border-radius: 4px;');
         
         window.AppDebug = {
-            Storage,
-            Utils,
-            FormValidation,
-            Templates,
-            Navigation,
-            clearStorage: () => Storage.clear(),
-            getVolunteers: () => Storage.getVolunteers(),
-            exportData: () => Templates.exportVolunteers()
+            Storage: typeof Storage !== 'undefined' ? Storage : null,
+            Utils: typeof Utils !== 'undefined' ? Utils : null,
+            FormValidation: typeof FormValidation !== 'undefined' ? FormValidation : null,
+            Templates: typeof Templates !== 'undefined' ? Templates : null,
+            Navigation: typeof Navigation !== 'undefined' ? Navigation : null,
+            clearStorage: () => typeof Storage !== 'undefined' ? Storage.clear() : null,
+            getVolunteers: () => typeof Storage !== 'undefined' ? Storage.getVolunteers() : [],
+            exportData: () => typeof Templates !== 'undefined' ? Templates.exportVolunteers() : null
         };
 
         console.log('Ferramentas disponíveis em: window.AppDebug');
