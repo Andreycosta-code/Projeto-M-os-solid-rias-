@@ -1,5 +1,11 @@
-# Projeto-Maos-solidarias-
-# ONG Mãos Solidárias - Plataforma Web
+#  ONG Mãos Solidárias - Plataforma Web
+
+![Release](https://img.shields.io/github/v/release/Andreycosta-code/Projeto-M-os-solid-rias-)
+![License](https://img.shields.io/badge/license-Educational-blue)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1_AA-green)
 
 Plataforma web completa e profissional para gestão de ONGs, incluindo gerenciamento de atividades, divulgação de projetos, captação de recursos e engajamento de voluntários.
 
